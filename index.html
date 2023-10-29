@@ -15,9 +15,9 @@
     <meta property="og:description" content="Template Phòng Cháy">
     <meta property="og:image" content="">
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+    <link rel='preconnect' href='https://fonts.googleapis.com'>
+    <link rel='preconnect' href='https://fonts.gstatic.com' crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&display=swap"
           rel="stylesheet">
 
     <link rel="icon" href="./assets/images/favicon.png">
@@ -31,29 +31,1159 @@
 
     <style>
         :root {
-            --primary-color: #e85000;
-            --primary-hover: #ee6b20;
-            --primary-rgb: 232, 80, 0;
-            --secondary-color: #ff0000;
-            --secondary-hover: #f10909;
-            --secondary-rgb: 255, 0, 0;
-            --gradient: linear-gradient(138.62deg, #BC0D2C 7.45%, #E65F1E 85.72%);
+            --primary-color: #0867AD;
+            --primary-hover: #045491;
+            --primary-rgb: 8, 103, 173;
+            --secondary-color: #e85000;
+            --secondary-hover: #ee6b20;
+            --secondary-rgb: 232, 80, 0;
         }
     </style>
 </head>
 <body>
 
 <div id="header" class="header">
+    <div class="header-main">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-3 col-4">
+                    <div class="header-logo">
+                        <a href="" aria-label="" class="hstack align-items-center">
+                            <img src="./assets/images/logo.png" class="" alt="">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-12">
+                    <div class="header-navigation" id="header-navigation">
+                        <ul>
+                            <li class="navigation-logo d-flex d-lg-none">
+                                <a href="/" class="d-inline-flex align-items-center justify-content-center align-middle"
+                                   data-href="/">
+                                    <img src="./assets/images/logo.png" class="img-fluid">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="" aria-label="">
+                                    Trang chủ
+                                </a>
+                            </li>
+                            <li>
+                                <a href="" aria-label="">
+                                    Tố cáo
+                                </a>
+                            </li>
+                            <li>
+                                <a href="" aria-label="">
+                                    Bảo hiểm
+                                </a>
+                            </li>
+                            <li>
+                                <a href="" aria-label="">
+                                    Dịch vụ
+                                    <i class="fal fa-angle-down"></i>
+                                </a>
+                                <ul>
+                                    <li>
+                                        <a href="">
+                                            Tên dịch vụ 1
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            Tên dịch vụ 2
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            Tên dịch vụ 3
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            Tên dịch vụ 4
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="" aria-label="">
+                                    Trung gian
+                                </a>
+                            </li>
+                            <li>
+                                <a href="" aria-label="">
+                                    Liên hệ
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-8">
+                    <div class="header-actions hstack gap-15px justify-content-end">
+                        <div class="header-users hstack gap-8px">
+                            <div class="header-user_item position-relative">
+                                <a href="" class="button-theme button-theme_primary"
+                                   aria-label="Đăng nhập">
+                                    <i class="fal fa-user-alt"></i>Đăng nhập
+                                </a>
+                            </div>
+                            <div class="header-user_item position-relative">
+                                <a href="" class="button-theme button-theme_secondary"
+                                   aria-label="Đăng ký tài khoản">
+                                    <i class="fal fa-sign-in-alt"></i>Đăng ký
+                                </a>
+                            </div>
+                            <!--
+                            <div class="header-user_item position-relative">
+                                <div class="user-price alert alert-danger mb-0 hstack gap-5px">
+                                    <i class="fal fa-wallet"></i>1.900.900vnđ
+                                </div>
+                            </div>
+                            <div class="header-user_item position-relative">
+                                <div class="user-dropdown">
+                                    <button type="button" class="button-theme button-theme_primary">
+                                        <i class="fal fa-user-alt"></i>
+                                        Tài khoản
+                                    </button>
+                                    <ul>
+                                        <li>
+                                            <a href="">
+                                                <i class="fas fa-exclamation-circle"></i>Lịch sử tố cáo
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="">
+                                                <i class="fas fa-history"></i>Lịch sử giao dịch
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="">
+                                                <i class="fas fa-file-invoice-dollar"></i>Nạp tiền
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="">
+                                                <i class="fas fa-lock-alt"></i>Đổi mật khẩu
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="">
+                                                <i class="fas fa-sign-out-alt"></i>Đăng xuất
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     <div class="header-overlay" id="header-overlay"></div>
 </div>
 
 <div id="main" class="main">
+    <div class="position-relative zi-1">
+        <div class="section-hero" id="slider-hero">
+            <div class="swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="position-relative pseudo">
+                            <img src="./assets/images/banner.jpg"
+                                 width='1903' height='595'
+                                 class="mw-100 w-100 image-animation"
+                                 alt=''>
+                            <a href="/" aria-label="Xem chi tiết"
+                               class="stretched-link"></a>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="position-relative pseudo">
+                            <img src="./assets/images/banner-2.jpg"
+                                 width='1903' height='595'
+                                 class="mw-100 w-100 image-animation"
+                                 alt=''>
+                            <a href="/" aria-label="Xem chi tiết"
+                               class="stretched-link"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-pagination position-absolute top-50 translate-middle-y zi-3 vstack w-auto gap-15px"></div>
+        </div>
+        <div class="section-search position-absolute zi-3 top-50 start-50 h-100 w-100 hstack justify-content-center translate-middle">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-10 col-xl-8">
+                        <div class="vstack gap-30px">
+                            <div class="section-heading text-center">
+                                <div class="heading-title">
+                                    CHECKSCAM.COM
+                                </div>
+                                <div class="heading-description">
+                                    Trước khi thực hiện giao dịch trực tuyến, hoặc ký hợp đồng mua bán, bạn hãy vào
+                                    <strong>CHECKSCAM.com</strong> để kiểm tra lịch sử lừa đảo bằng cách nhập số điện
+                                    thoại, email hoặc số
+                                    tài khoản ngân hàng của đối phương vào ô dưới đây
+                                </div>
+                            </div>
+                            <div class="section-form">
+                                <form action="">
+                                    <div class="form-fields hstack gap-15px">
+                                        <input type="text" class="form-control form-fields_input"
+                                               placeholder="Nhập SĐT, Email hoặc Số tài khoản để kiểm tra...">
+                                        <button type="button" class="button-theme button-theme_secondary"
+                                                aria-label="Tra cứu">
+                                            <i class="fal fa-search"></i>
+                                            TRA CỨU
+                                        </button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="section-gap section-scam">
+        <div class="container">
+            <div class="section-heading text-center">
+                <div class="heading-title">
+                    Tố cáo mới nhất
+                </div>
+                <div class="heading-description">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci consequatur dolorem enim
+                    illum, ipsam nisi quia quod sequi.
+                </div>
+            </div>
+            <div class="vstack">
+                <div class="scam-card scam-header">
+                    <div class="scam-title scam-column">
+                        Người bị tố cáo
+                    </div>
+                    <div class="scam-column scam-text">
+                        Số tiền
+                    </div>
+                    <div class="scam-column scam-text">
+                        SDT/STK
+                    </div>
+                    <div class="scam-column scam-text">
+                        Lượt xem
+                    </div>
+                    <div class="scam-column scam-text">
+                        Đánh giá
+                    </div>
+                    <div class="scam-column justify-content-end">
+                        <div class="scam-text">
+                            Trạng thái
+                        </div>
+                    </div>
+                </div>
+                <div class="scam-card">
+                    <div class="scam-title scam-column">
+                        <div class="scam-icon me-2">
+                            <i class="fas fa-user-alt"></i>
+                        </div>
+                        <div class="limit">
+                            Nguyễn Văn A
+                        </div>
+                    </div>
+                    <div class="scam-column scam-price">
+                        <div class="scam-icon me-2">
+                            <i class="fas fa-money-bill"></i>
+                        </div>
+                        7.000.000đ
+                    </div>
+                    <div class="scam-column scam-text">
+                        <div class="scam-icon me-2">
+                            <i class="fas fa-phone-alt"></i>
+                        </div>
+                        0909909090
+                    </div>
+                    <div class="scam-column scam-text">
+                        <div class="scam-icon me-2">
+                            <i class="fas fa-eye"></i>
+                        </div>
+                        1250 lượt xem
+                    </div>
+                    <div class="scam-column scam-text">
+                        <div class="scam-icon me-2">
+                            <i class="fas fa-comment-alt-dots"></i>
+                        </div>
+                        12 đánh giá
+                    </div>
+                    <div class="scam-column justify-content-end">
+                        <div class="scam-alert alert alert-secondary">
+                            Đợi duyệt
+                        </div>
+                    </div>
+                    <a href="" class="stretched-link"></a>
+                </div>
+                <div class="scam-card">
+                    <div class="scam-title scam-column">
+                        <div class="scam-icon me-2">
+                            <i class="fas fa-user-alt"></i>
+                        </div>
+                        <div class="limit">
+                            Nguyễn Văn A
+                        </div>
+                    </div>
+                    <div class="scam-column scam-price">
+                        <div class="scam-icon me-2">
+                            <i class="fas fa-money-bill"></i>
+                        </div>
+                        7.000.000đ
+                    </div>
+                    <div class="scam-column scam-text">
+                        <div class="scam-icon me-2">
+                            <i class="fas fa-phone-alt"></i>
+                        </div>
+                        0909909090
+                    </div>
+                    <div class="scam-column scam-text">
+                        <div class="scam-icon me-2">
+                            <i class="fas fa-eye"></i>
+                        </div>
+                        1250 lượt xem
+                    </div>
+                    <div class="scam-column scam-text">
+                        <div class="scam-icon me-2">
+                            <i class="fas fa-comment-alt-dots"></i>
+                        </div>
+                        12 đánh giá
+                    </div>
+                    <div class="scam-column justify-content-end">
+                        <div class="scam-alert alert alert-success">
+                            Đã duyệt
+                        </div>
+                    </div>
+                    <a href="" class="stretched-link"></a>
+                </div>
+                <div class="scam-card">
+                    <div class="scam-title scam-column">
+                        <div class="scam-icon me-2">
+                            <i class="fas fa-user-alt"></i>
+                        </div>
+                        <div class="limit">
+                            Nguyễn Văn A
+                        </div>
+                    </div>
+                    <div class="scam-column scam-price">
+                        <div class="scam-icon me-2">
+                            <i class="fas fa-money-bill"></i>
+                        </div>
+                        7.000.000đ
+                    </div>
+                    <div class="scam-column scam-text">
+                        <div class="scam-icon me-2">
+                            <i class="fas fa-phone-alt"></i>
+                        </div>
+                        0909909090
+                    </div>
+                    <div class="scam-column scam-text">
+                        <div class="scam-icon me-2">
+                            <i class="fas fa-eye"></i>
+                        </div>
+                        1250 lượt xem
+                    </div>
+                    <div class="scam-column scam-text">
+                        <div class="scam-icon me-2">
+                            <i class="fas fa-comment-alt-dots"></i>
+                        </div>
+                        12 đánh giá
+                    </div>
+                    <div class="scam-column justify-content-end">
+                        <div class="scam-alert alert alert-danger">
+                            Đã gỡ
+                        </div>
+                    </div>
+                    <a href="" class="stretched-link"></a>
+                </div>
+                <div class="scam-card">
+                    <div class="scam-title scam-column">
+                        <div class="scam-icon me-2">
+                            <i class="fas fa-user-alt"></i>
+                        </div>
+                        <div class="limit">
+                            Nguyễn Văn A
+                        </div>
+                    </div>
+                    <div class="scam-column scam-price">
+                        <div class="scam-icon me-2">
+                            <i class="fas fa-money-bill"></i>
+                        </div>
+                        7.000.000đ
+                    </div>
+                    <div class="scam-column scam-text">
+                        <div class="scam-icon me-2">
+                            <i class="fas fa-phone-alt"></i>
+                        </div>
+                        0909909090
+                    </div>
+                    <div class="scam-column scam-text">
+                        <div class="scam-icon me-2">
+                            <i class="fas fa-eye"></i>
+                        </div>
+                        1250 lượt xem
+                    </div>
+                    <div class="scam-column scam-text">
+                        <div class="scam-icon me-2">
+                            <i class="fas fa-comment-alt-dots"></i>
+                        </div>
+                        12 đánh giá
+                    </div>
+                    <div class="scam-column justify-content-end">
+                        <div class="scam-alert alert alert-warning">
+                            Đang xác minh
+                        </div>
+                    </div>
+                    <a href="" class="stretched-link"></a>
+                </div>
+                <div class="scam-card">
+                    <div class="scam-title scam-column">
+                        <div class="scam-icon me-2">
+                            <i class="fas fa-user-alt"></i>
+                        </div>
+                        <div class="limit">
+                            Nguyễn Văn A
+                        </div>
+                    </div>
+                    <div class="scam-column scam-price">
+                        <div class="scam-icon me-2">
+                            <i class="fas fa-money-bill"></i>
+                        </div>
+                        7.000.000đ
+                    </div>
+                    <div class="scam-column scam-text">
+                        <div class="scam-icon me-2">
+                            <i class="fas fa-phone-alt"></i>
+                        </div>
+                        0909909090
+                    </div>
+                    <div class="scam-column scam-text">
+                        <div class="scam-icon me-2">
+                            <i class="fas fa-eye"></i>
+                        </div>
+                        1250 lượt xem
+                    </div>
+                    <div class="scam-column scam-text">
+                        <div class="scam-icon me-2">
+                            <i class="fas fa-comment-alt-dots"></i>
+                        </div>
+                        12 đánh giá
+                    </div>
+                    <div class="scam-column justify-content-end">
+                        <div class="scam-alert alert alert-secondary">
+                            Đợi duyệt
+                        </div>
+                    </div>
+                    <a href="" class="stretched-link"></a>
+                </div>
+                <div class="scam-card">
+                    <div class="scam-title scam-column">
+                        <div class="scam-icon me-2">
+                            <i class="fas fa-user-alt"></i>
+                        </div>
+                        <div class="limit">
+                            Nguyễn Văn A
+                        </div>
+                    </div>
+                    <div class="scam-column scam-price">
+                        <div class="scam-icon me-2">
+                            <i class="fas fa-money-bill"></i>
+                        </div>
+                        7.000.000đ
+                    </div>
+                    <div class="scam-column scam-text">
+                        <div class="scam-icon me-2">
+                            <i class="fas fa-phone-alt"></i>
+                        </div>
+                        0909909090
+                    </div>
+                    <div class="scam-column scam-text">
+                        <div class="scam-icon me-2">
+                            <i class="fas fa-eye"></i>
+                        </div>
+                        1250 lượt xem
+                    </div>
+                    <div class="scam-column scam-text">
+                        <div class="scam-icon me-2">
+                            <i class="fas fa-comment-alt-dots"></i>
+                        </div>
+                        12 đánh giá
+                    </div>
+                    <div class="scam-column justify-content-end">
+                        <div class="scam-alert alert alert-success">
+                            Đã duyệt
+                        </div>
+                    </div>
+                    <a href="" class="stretched-link"></a>
+                </div>
+                <div class="scam-card">
+                    <div class="scam-title scam-column">
+                        <div class="scam-icon me-2">
+                            <i class="fas fa-user-alt"></i>
+                        </div>
+                        <div class="limit">
+                            Nguyễn Văn A
+                        </div>
+                    </div>
+                    <div class="scam-column scam-price">
+                        <div class="scam-icon me-2">
+                            <i class="fas fa-money-bill"></i>
+                        </div>
+                        7.000.000đ
+                    </div>
+                    <div class="scam-column scam-text">
+                        <div class="scam-icon me-2">
+                            <i class="fas fa-phone-alt"></i>
+                        </div>
+                        0909909090
+                    </div>
+                    <div class="scam-column scam-text">
+                        <div class="scam-icon me-2">
+                            <i class="fas fa-eye"></i>
+                        </div>
+                        1250 lượt xem
+                    </div>
+                    <div class="scam-column scam-text">
+                        <div class="scam-icon me-2">
+                            <i class="fas fa-comment-alt-dots"></i>
+                        </div>
+                        12 đánh giá
+                    </div>
+                    <div class="scam-column justify-content-end">
+                        <div class="scam-alert alert alert-danger">
+                            Đã gỡ
+                        </div>
+                    </div>
+                    <a href="" class="stretched-link"></a>
+                </div>
+                <div class="scam-card">
+                    <div class="scam-title scam-column">
+                        <div class="scam-icon me-2">
+                            <i class="fas fa-user-alt"></i>
+                        </div>
+                        <div class="limit">
+                            Nguyễn Văn A
+                        </div>
+                    </div>
+                    <div class="scam-column scam-price">
+                        <div class="scam-icon me-2">
+                            <i class="fas fa-money-bill"></i>
+                        </div>
+                        7.000.000đ
+                    </div>
+                    <div class="scam-column scam-text">
+                        <div class="scam-icon me-2">
+                            <i class="fas fa-phone-alt"></i>
+                        </div>
+                        0909909090
+                    </div>
+                    <div class="scam-column scam-text">
+                        <div class="scam-icon me-2">
+                            <i class="fas fa-eye"></i>
+                        </div>
+                        1250 lượt xem
+                    </div>
+                    <div class="scam-column scam-text">
+                        <div class="scam-icon me-2">
+                            <i class="fas fa-comment-alt-dots"></i>
+                        </div>
+                        12 đánh giá
+                    </div>
+                    <div class="scam-column justify-content-end">
+                        <div class="scam-alert alert alert-warning">
+                            Đang xác minh
+                        </div>
+                    </div>
+                    <a href="" class="stretched-link"></a>
+                </div>
+                <div class="scam-card">
+                    <div class="scam-title scam-column">
+                        <div class="scam-icon me-2">
+                            <i class="fas fa-user-alt"></i>
+                        </div>
+                        <div class="limit">
+                            Nguyễn Văn A
+                        </div>
+                    </div>
+                    <div class="scam-column scam-price">
+                        <div class="scam-icon me-2">
+                            <i class="fas fa-money-bill"></i>
+                        </div>
+                        7.000.000đ
+                    </div>
+                    <div class="scam-column scam-text">
+                        <div class="scam-icon me-2">
+                            <i class="fas fa-phone-alt"></i>
+                        </div>
+                        0909909090
+                    </div>
+                    <div class="scam-column scam-text">
+                        <div class="scam-icon me-2">
+                            <i class="fas fa-eye"></i>
+                        </div>
+                        1250 lượt xem
+                    </div>
+                    <div class="scam-column scam-text">
+                        <div class="scam-icon me-2">
+                            <i class="fas fa-comment-alt-dots"></i>
+                        </div>
+                        12 đánh giá
+                    </div>
+                    <div class="scam-column justify-content-end">
+                        <div class="scam-alert alert alert-secondary">
+                            Đợi duyệt
+                        </div>
+                    </div>
+                    <a href="" class="stretched-link"></a>
+                </div>
+                <div class="scam-card">
+                    <div class="scam-title scam-column">
+                        <div class="scam-icon me-2">
+                            <i class="fas fa-user-alt"></i>
+                        </div>
+                        <div class="limit">
+                            Nguyễn Văn A
+                        </div>
+                    </div>
+                    <div class="scam-column scam-price">
+                        <div class="scam-icon me-2">
+                            <i class="fas fa-money-bill"></i>
+                        </div>
+                        7.000.000đ
+                    </div>
+                    <div class="scam-column scam-text">
+                        <div class="scam-icon me-2">
+                            <i class="fas fa-phone-alt"></i>
+                        </div>
+                        0909909090
+                    </div>
+                    <div class="scam-column scam-text">
+                        <div class="scam-icon me-2">
+                            <i class="fas fa-eye"></i>
+                        </div>
+                        1250 lượt xem
+                    </div>
+                    <div class="scam-column scam-text">
+                        <div class="scam-icon me-2">
+                            <i class="fas fa-comment-alt-dots"></i>
+                        </div>
+                        12 đánh giá
+                    </div>
+                    <div class="scam-column justify-content-end">
+                        <div class="scam-alert alert alert-success">
+                            Đã duyệt
+                        </div>
+                    </div>
+                    <a href="" class="stretched-link"></a>
+                </div>
+                <div class="scam-card">
+                    <div class="scam-title scam-column">
+                        <div class="scam-icon me-2">
+                            <i class="fas fa-user-alt"></i>
+                        </div>
+                        <div class="limit">
+                            Nguyễn Văn A
+                        </div>
+                    </div>
+                    <div class="scam-column scam-price">
+                        <div class="scam-icon me-2">
+                            <i class="fas fa-money-bill"></i>
+                        </div>
+                        7.000.000đ
+                    </div>
+                    <div class="scam-column scam-text">
+                        <div class="scam-icon me-2">
+                            <i class="fas fa-phone-alt"></i>
+                        </div>
+                        0909909090
+                    </div>
+                    <div class="scam-column scam-text">
+                        <div class="scam-icon me-2">
+                            <i class="fas fa-eye"></i>
+                        </div>
+                        1250 lượt xem
+                    </div>
+                    <div class="scam-column scam-text">
+                        <div class="scam-icon me-2">
+                            <i class="fas fa-comment-alt-dots"></i>
+                        </div>
+                        12 đánh giá
+                    </div>
+                    <div class="scam-column justify-content-end">
+                        <div class="scam-alert alert alert-danger">
+                            Đã gỡ
+                        </div>
+                    </div>
+                    <a href="" class="stretched-link"></a>
+                </div>
+                <div class="scam-card">
+                    <div class="scam-title scam-column">
+                        <div class="scam-icon me-2">
+                            <i class="fas fa-user-alt"></i>
+                        </div>
+                        <div class="limit">
+                            Nguyễn Văn A
+                        </div>
+                    </div>
+                    <div class="scam-column scam-price">
+                        <div class="scam-icon me-2">
+                            <i class="fas fa-money-bill"></i>
+                        </div>
+                        7.000.000đ
+                    </div>
+                    <div class="scam-column scam-text">
+                        <div class="scam-icon me-2">
+                            <i class="fas fa-phone-alt"></i>
+                        </div>
+                        0909909090
+                    </div>
+                    <div class="scam-column scam-text">
+                        <div class="scam-icon me-2">
+                            <i class="fas fa-eye"></i>
+                        </div>
+                        1250 lượt xem
+                    </div>
+                    <div class="scam-column scam-text">
+                        <div class="scam-icon me-2">
+                            <i class="fas fa-comment-alt-dots"></i>
+                        </div>
+                        12 đánh giá
+                    </div>
+                    <div class="scam-column justify-content-end">
+                        <div class="scam-alert alert alert-warning">
+                            Đang xác minh
+                        </div>
+                    </div>
+                    <a href="" class="stretched-link"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="section-gap">
+        <div class="container">
+            <div class="row g-4">
+                <div class="section-heading text-center">
+                    <div class="heading-title">
+                        Dịch vụ nổi bật
+                    </div>
+                    <div class="heading-description">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci consequatur dolorem enim
+                        illum, ipsam nisi quia quod sequi.
+                    </div>
+                </div>
+                <div class="row g-4">
+                    <div class="col-md-6 col-lg-3">
+                        <div class="service-card card">
+                            <div class="card-icon">
+                                <i class="fas fa-search"></i>
+                            </div>
+                            <div class="card-body p-0">
+                                <div class="card-title">
+                                    Check Scammer
+                                </div>
+                                <div class="card-text">
+                                    Bạn chỉ cần nhập SDT, STK ngân hàng, thông tin của scammer trong hệ thống sẽ bị
+                                    phơi bày
+                                </div>
+                            </div>
+                            <a href="" class="stretched-link"></a>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                        <div class="service-card card">
+                            <div class="card-icon">
+                                <i class="fas fa-flag"></i>
+                            </div>
+                            <div class="card-body p-0">
+                                <div class="card-title">
+                                    Tố cáo lừa đảo
+                                </div>
+                                <div class="card-text">
+                                    Bạn chỉ cần nhập SDT, STK ngân hàng, thông tin của scammer trong hệ thống sẽ bị
+                                    phơi bày
+                                </div>
+                            </div>
+                            <a href="" class="stretched-link"></a>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                        <div class="service-card card">
+                            <div class="card-icon">
+                                <i class="fas fa-shield-check"></i>
+                            </div>
+                            <div class="card-body p-0">
+                                <div class="card-title">
+                                    Check quỹ bảo hiểm
+                                </div>
+                                <div class="card-text">
+                                    Bạn chỉ cần nhập SDT, STK ngân hàng, thông tin của scammer trong hệ thống sẽ bị
+                                    phơi bày
+                                </div>
+                            </div>
+                            <a href="" class="stretched-link"></a>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                        <div class="service-card card">
+                            <div class="card-icon">
+                                <i class="fab fa-facebook-square"></i>
+                            </div>
+                            <div class="card-body p-0">
+                                <div class="card-title">
+                                    Dịch vụ Facebook
+                                </div>
+                                <div class="card-text">
+                                    Bạn chỉ cần nhập SDT, STK ngân hàng, thông tin của scammer trong hệ thống sẽ bị
+                                    phơi bày
+                                </div>
+                            </div>
+                            <a href="" class="stretched-link"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="section-gap section-light">
+        <div class="container">
+            <div class="row g-4">
+                <div class="section-heading text-center">
+                    <div class="heading-title">
+                        Hợp đồng trung gian
+                    </div>
+                    <div class="heading-description">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci consequatur dolorem enim
+                        illum, ipsam nisi quia quod sequi.
+                    </div>
+                </div>
+                <div class="table-responsive">
+                    <table class="table table-contract table-hover align-middle">
+                        <thead>
+                        <tr>
+                            <th class="w-50">
+                                Loại hợp đồng
+                            </th>
+                            <th class="w-25 text-end">
+                                Giá trị
+                            </th>
+                            <th class="w-25 text-end">
+                                Trạng thái
+                            </th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td class="contract-title">
+                                Hợp đồng trung gian: giao dịch quy đổi USD sang VNĐ
+                            </td>
+                            <td class="text-end text-danger fw-medium">
+                                $20,000
+                            </td>
+                            <td class="text-end">
+                                <div class="contract-alert alert alert-success">
+                                    Thành công
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="contract-title">
+                                Hợp đồng trung gian: giao dịch quy đổi USD sang VNĐ
+                            </td>
+                            <td class="text-end text-danger fw-medium">
+                                $20,000
+                            </td>
+                            <td class="text-end">
+                                <div class="contract-alert alert alert-warning">
+                                    Delay
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="contract-title">
+                                Hợp đồng trung gian: giao dịch quy đổi USD sang VNĐ
+                            </td>
+                            <td class="text-end text-danger fw-medium">
+                                $20,000
+                            </td>
+                            <td class="text-end">
+                                <div class="contract-alert alert alert-secondary">
+                                    Đang chờ
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="contract-title">
+                                Hợp đồng trung gian: giao dịch quy đổi USD sang VNĐ
+                            </td>
+                            <td class="text-end text-danger fw-medium">
+                                $20,000
+                            </td>
+                            <td class="text-end">
+                                <div class="contract-alert alert alert-secondary">
+                                    Đang chờ
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="contract-title">
+                                Hợp đồng trung gian: giao dịch quy đổi USD sang VNĐ
+                            </td>
+                            <td class="text-end text-danger fw-medium">
+                                $20,000
+                            </td>
+                            <td class="text-end">
+                                <div class="contract-alert alert alert-danger">
+                                    Đã hủy
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="contract-title">
+                                Hợp đồng trung gian: giao dịch quy đổi USD sang VNĐ
+                            </td>
+                            <td class="text-end text-danger fw-medium">
+                                $20,000
+                            </td>
+                            <td class="text-end">
+                                <div class="contract-alert alert alert-warning">
+                                    Delay
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="contract-title">
+                                Hợp đồng trung gian: giao dịch quy đổi USD sang VNĐ
+                            </td>
+                            <td class="text-end text-danger fw-medium">
+                                $20,000
+                            </td>
+                            <td class="text-end">
+                                <div class="contract-alert alert alert-secondary">
+                                    Đang chờ
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="contract-title">
+                                Hợp đồng trung gian: giao dịch quy đổi USD sang VNĐ
+                            </td>
+                            <td class="text-end text-danger fw-medium">
+                                $20,000
+                            </td>
+                            <td class="text-end">
+                                <div class="contract-alert alert alert-secondary">
+                                    Đang chờ
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="contract-title">
+                                Hợp đồng trung gian: giao dịch quy đổi USD sang VNĐ
+                            </td>
+                            <td class="text-end text-danger fw-medium">
+                                $20,000
+                            </td>
+                            <td class="text-end">
+                                <div class="contract-alert alert alert-danger">
+                                    Đã hủy
+                                </div>
+                            </td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
 
 <footer id="footer" class="footer">
+    <div class="footer-main">
+        <div class="position-relative zi-2">
+            <div class="container">
+                <div class="section-gap">
+                    <div class="row">
+                        <div class="col-lg-4 col-xl-5">
+                            <div class="footer-item">
+                                <div class="footer-logo">
+                                    <a href="/" class="d-inline-block align-middle">
+                                        <img src="./assets/images/logo-white.png" class="img-fluid" alt="">
+                                    </a>
+                                </div>
+                                <div class="footer-title">
+                                    Website check scam và cung cấp dịch vụ mạng xã hội tốt nhất Việt Nam hiện nay
+                                </div>
+                                <ul class="footer-list list-unstyled mb-0">
+                                    <li class="footer-list_item">
+                                        <a href="" class="footer-list_item--link">
+                                            <i class="fas fa-map-marker-alt"></i>Số 152 Trần Vỹ, Mai Dịch, Cầu Giấy,
+                                            Hà
+                                            Nội
+                                        </a>
+                                    </li>
+                                    <li class="footer-list_item">
+                                        <a href="" class="footer-list_item--link">
+                                            <i class="fas fa-phone-rotary"></i>0969110811
+                                        </a>
+                                    </li>
+                                    <li class="footer-list_item">
+                                        <a href="" class="footer-list_item--link">
+                                            <i class="fas fa-phone-alt"></i>0969110811
+                                        </a>
+                                    </li>
+                                    <li class="footer-list_item">
+                                        <a href="" class="footer-list_item--link">
+                                            <i class="fas fa-envelope"></i>support@nencer.com
+                                        </a>
+                                    </li>
+                                </ul>
+                                <ul class="footer-social list-unstyled mb-0 hstack gap-5px">
+                                    <li class="footer-social_item">
+                                        <a href="fb.com/admin" class="footer-social_item--link">
+                                            <i class="fab fa-facebook-f"></i>
+                                        </a>
+                                    </li>
+                                    <li class="footer-social_item">
+                                        <a href="fb.com/admin" class="footer-social_item--link">
+                                            <i class="fab fa-twitter"></i>
+                                        </a>
+                                    </li>
+                                    <li class="footer-social_item">
+                                        <a href="fb.com/admin" class="footer-social_item--link">
+                                            <i class="fab fa-google"></i>
+                                        </a>
+                                    </li>
+                                    <li class="footer-social_item">
+                                        <a href="https://www.youtube.com/watch?v=neCmEbI2VWg"
+                                           class="footer-social_item--link">
+                                            <i class="fab fa-youtube"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-lg-8 col-xl-7">
+                            <div class="row g-4">
+                                <div class="col-lg-4 col-sm-6">
+                                    <div class="footer-title">
+                                        Dịch vụ
+                                    </div>
+                                    <ul class="footer-list footer-link list-unstyled mb-0">
+                                        <li class="footer-list_item">
+                                            <a href="" class="footer-list_item--link">
+                                                Check Scam
+                                            </a>
+                                        </li>
+                                        <li class="footer-list_item">
+                                            <a href="" class="footer-list_item--link">
+                                                Tố cáo lừa đảo
+                                            </a>
+                                        </li>
+                                        <li class="footer-list_item">
+                                            <a href="" class="footer-list_item--link">
+                                                Check quỹ bảo hiểm
+                                            </a>
+                                        </li>
+                                        <li class="footer-list_item">
+                                            <a href="" class="footer-list_item--link">
+                                                Dịch vụ Facebook
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="col-lg-4 col-sm-6">
+                                    <div class="footer-title">
+                                        Liên kết nhanh
+                                    </div>
+                                    <ul class="footer-list footer-link list-unstyled mb-0">
+                                        <li class="footer-list_item">
+                                            <a href="" class="footer-list_item--link">
+                                                Giới thiệu
+                                            </a>
+                                        </li>
+                                        <li class="footer-list_item">
+                                            <a href="" class="footer-list_item--link">
+                                                Liên hệ
+                                            </a>
+                                        </li>
+                                        <li class="footer-list_item">
+                                            <a href="" class="footer-list_item--link">
+                                                Chính sách
+                                            </a>
+                                        </li>
+                                        <li class="footer-list_item">
+                                            <a href="" class="footer-list_item--link">
+                                                Điều khoản
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="col-lg-4 col-sm-6">
+                                    <div class="footer-title">
+                                        Diễn đàn
+                                    </div>
+                                    <ul class="footer-list footer-link list-unstyled mb-0">
+                                        <li class="footer-list_item">
+                                            <a href="" class="footer-list_item--link">
+                                                Page tố cáo
+                                            </a>
+                                        </li>
+                                        <li class="footer-list_item">
+                                            <a href="" class="footer-list_item--link">
+                                                Page trung gian
+                                            </a>
+                                        </li>
+                                        <li class="footer-list_item">
+                                            <a href="" class="footer-list_item--link">
+                                                PAge share trick
+                                            </a>
+                                        </li>
+                                        <li class="footer-list_item">
+                                            <a href="" class="footer-list_item--link">
+                                                Page dịch vụ mạng xã hội
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="section-gap section-bottom">
+                    <div class="row justify-content-center justify-content-lg-between">
+                        <div class="col-auto">
+                            <div class="text-center text-light">©2010 - 2023 Software by Nencer LLC.,</div>
+                        </div>
+                        <div class="col-auto">
+                            <div class="hstack justify-content-end gap-10px footer-logos">
+                                <a href="">
+                                    <img src="./assets/images/visa-logo.webp" alt="">
+                                </a>
+                                <a href="">
+                                    <img src="./assets/images/master-logo.png" alt="">
+                                </a>
+                                <a href="">
+                                    <img src="./assets/images/american-express-logo.svg" alt="">
+                                </a>
+                                <a href="">
+                                    <img src="./assets/images/JCB-logo.svg" alt="">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </footer>
 
-<script type=" text/javascript" src="./assets/plugins/jquery.min.js"></script>
+<script type="text/javascript" src="./assets/plugins/jquery.min.js"></script>
 <script type="text/javascript"
         src="./assets/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
 <script type="text/javascript" src="./assets/plugins/swiper/swiper-bundle.min.js"></script>

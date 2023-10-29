@@ -108,6 +108,35 @@ let handleCallMenu = function () {
     }
 }
 
+const handleSliderHero = function () {
+    if ($('#slider-hero').length > 0) {
+        new Swiper('#slider-hero .swiper', {
+            slidesPerView: 1,
+            navigation: {
+                nextEl: "#slider-hero  .slider-button_next",
+                prevEl: "#slider-hero  .slider-button_prev",
+            },
+            autoplay: {
+                delay: 4000,
+                disableOnInteraction: true,
+            },
+            speed: 1000,
+            loop: true,
+            effect: 'fade',
+            pagination: {
+                el: "#slider-hero .hero-pagination",
+                clickable: true, renderBullet: function (index, className) {
+                    index += 1;
+                    if (index <= 9) {
+                        index = '0' + index;
+                    }
+                    return `<span class="${className}">${index}</span>`;
+                },
+            }
+        });
+    }
+}
+
 $(function () {
     handleApplyCollapse($('#header-navigation > ul'), true, true);
     handleCallMenu();
@@ -115,4 +144,6 @@ $(function () {
         handleApplyCollapse($('#header-navigation > ul'));
         handleCallMenu();
     });
+
+    handleSliderHero();
 });
