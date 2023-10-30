@@ -113,25 +113,18 @@ const handleSliderHero = function () {
         new Swiper('#slider-hero .swiper', {
             slidesPerView: 1,
             navigation: {
-                nextEl: "#slider-hero  .slider-button_next",
-                prevEl: "#slider-hero  .slider-button_prev",
+                nextEl: "#slider-hero .slider-button_next",
+                prevEl: "#slider-hero .slider-button_prev",
             },
             autoplay: {
-                delay: 4000,
+                delay: 6000,
                 disableOnInteraction: true,
             },
-            speed: 1000,
+            speed: 800,
             loop: true,
-            effect: 'fade',
             pagination: {
-                el: "#slider-hero .hero-pagination",
-                clickable: true, renderBullet: function (index, className) {
-                    index += 1;
-                    if (index <= 9) {
-                        index = '0' + index;
-                    }
-                    return `<span class="${className}">${index}</span>`;
-                },
+                el: "#slider-hero .slider-pagination",
+                clickable: true
             }
         });
     }
