@@ -108,6 +108,16 @@ let handleCallMenu = function () {
     }
 }
 
+const handleStickHeader = function () {
+	$(window).scroll(function (e) {
+		if ($(document).scrollTop() > $('#header').innerHeight()) {
+			$('#header').addClass('is-scroll');
+		} else {
+			$('#header').removeClass('is-scroll');
+		}
+	});
+}
+
 const handleSliderHero = function () {
     if ($('#slider-hero').length > 0) {
         new Swiper('#slider-hero .swiper', {
@@ -137,6 +147,7 @@ $(function () {
         handleApplyCollapse($('#header-navigation > ul'));
         handleCallMenu();
     });
+	handleStickHeader();
 
     handleSliderHero();
 });

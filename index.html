@@ -45,15 +45,15 @@
 <div id="header" class="header">
 	<div class="header-main">
 		<div class="container">
-			<div class="row flex-nowrap justify-content-between align-items-center">
-				<div class="col-lg-auto col-xl-3 col-4">
+			<div class="row flex-lg-nowrap justify-content-between align-items-center">
+				<div class="col-lg-auto col-xl-3 col-5 order-1 order-lg-1">
 					<div class="header-logo">
 						<a href="" aria-label="" class="hstack align-items-center">
 							<img src="./assets/images/logo.png" class="" alt="">
 						</a>
 					</div>
 				</div>
-				<div class="col-lg-auto col-xl-6 col-12">
+				<div class="col-lg-auto col-xl-6 col-12 order-3 order-lg-2">
 					<div class="header-navigation" id="header-navigation">
 						<ul>
 							<li class="navigation-logo d-flex d-lg-none">
@@ -118,22 +118,29 @@
 						</ul>
 					</div>
 				</div>
-				<div class="col-lg-auto col-xl-3 col-8">
-					<div class="header-actions hstack gap-15px justify-content-end">
+				<div class="col-lg-auto col-xl-3 col-7 order-2 order-lg-3">
+					<div class="header-actions hstack gap-8px justify-content-end">
 						<div class="header-users hstack gap-8px">
+							<!--
 							<div class="header-user_item position-relative">
 								<a href="" class="button-theme button-theme_primary"
 								   aria-label="Đăng nhập">
-									<i class="fal fa-user-alt"></i>Đăng nhập
+									<i class="fal fa-user-alt"></i>
+									<span>
+										Đăng nhập
+									</span>
 								</a>
 							</div>
 							<div class="header-user_item position-relative">
 								<a href="" class="button-theme button-theme_secondary"
 								   aria-label="Đăng ký tài khoản">
-									<i class="fal fa-sign-in-alt"></i>Đăng ký
+									<i class="fal fa-sign-in-alt"></i>
+									<span>
+										Đăng ký
+									</span>
 								</a>
 							</div>
-							<!--
+							-->
 							<div class="header-user_item position-relative">
 								<div class="user-price alert alert-danger mb-0 hstack gap-5px">
 									<i class="fal fa-wallet"></i>1.900.900vnđ
@@ -143,7 +150,9 @@
 								<div class="user-dropdown">
 									<button type="button" class="button-theme button-theme_primary">
 										<i class="fal fa-user-alt"></i>
+										<span>
 										Tài khoản
+										</span>
 									</button>
 									<ul>
 										<li>
@@ -174,7 +183,14 @@
 									</ul>
 								</div>
 							</div>
-							-->
+						</div>
+						<div class="header-hamburger d-flex d-lg-none">
+							<button type="button" class="hamburger-button" id="hamburger-button">
+								<span></span>
+								<span></span>
+								<span></span>
+								<span></span>
+							</button>
 						</div>
 					</div>
 				</div>
