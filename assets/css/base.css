@@ -286,8 +286,8 @@ input[type='number'] {
 }
 
 @media screen and (min-width: 1400px) {
-    .row-cols-xl-9 > * {
+    .row-cols-xl-8 > * {
         flex: 0 0 auto;
-        width: calc(100% / 9)
+        width: calc(100% / 8)
     }
 }
