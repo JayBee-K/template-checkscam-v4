@@ -109,13 +109,13 @@ let handleCallMenu = function () {
 }
 
 const handleStickHeader = function () {
-	$(window).scroll(function (e) {
-		if ($(document).scrollTop() > $('#header').innerHeight()) {
-			$('#header').addClass('is-scroll');
-		} else {
-			$('#header').removeClass('is-scroll');
-		}
-	});
+    $(window).scroll(function (e) {
+        if ($(document).scrollTop() > $('#header').innerHeight()) {
+            $('#header').addClass('is-scroll');
+        } else {
+            $('#header').removeClass('is-scroll');
+        }
+    });
 }
 
 const handleSliderHero = function () {
@@ -141,35 +141,50 @@ const handleSliderHero = function () {
 }
 
 const handleCopyValue = function () {
-	const copyButtons = document.querySelectorAll('.button-copy');
-	if (copyButtons) {
-		copyButtons.forEach(function (copyButton) {
-			copyButton.addEventListener('click', function () {
-				const valueToCopy = copyButton.getAttribute('data-value');
+    const copyButtons = document.querySelectorAll('.button-copy');
+    if (copyButtons) {
+        copyButtons.forEach(function (copyButton) {
+            copyButton.addEventListener('click', function () {
+                const valueToCopy = copyButton.getAttribute('data-value');
 
-				const tempTextArea = document.createElement('textarea');
-				tempTextArea.style.cssText = 'position: absolute; left: -99999px';
-				tempTextArea.setAttribute("id", "textareaCopy");
-				document.body.appendChild(tempTextArea);
+                const tempTextArea = document.createElement('textarea');
+                tempTextArea.style.cssText = 'position: absolute; left: -99999px';
+                tempTextArea.setAttribute("id", "textareaCopy");
+                document.body.appendChild(tempTextArea);
 
-				let textareaElm = document.getElementById('textareaCopy');
-				textareaElm.value = valueToCopy;
-				textareaElm.select();
-				textareaElm.setSelectionRange(0, 99999);
-				document.execCommand('copy');
+                let textareaElm = document.getElementById('textareaCopy');
+                textareaElm.value = valueToCopy;
+                textareaElm.select();
+                textareaElm.setSelectionRange(0, 99999);
+                document.execCommand('copy');
 
-				document.body.removeChild(textareaElm);
+                document.body.removeChild(textareaElm);
 
-				if (copyButton.getAttribute('data-bs-toggle') === 'tooltip') {
-					copyButton.setAttribute('title', 'Đã sao chép');
+                if (copyButton.getAttribute('data-bs-toggle') === 'tooltip') {
+                    copyButton.setAttribute('title', 'Đã sao chép');
 
-					const tooltip = bootstrap.Tooltip.getInstance(copyButton);
-					tooltip.setContent({'.tooltip-inner': 'Đã sao chép'})
-				}
-			});
-		})
-	}
+                    const tooltip = bootstrap.Tooltip.getInstance(copyButton);
+                    tooltip.setContent({'.tooltip-inner': 'Đã sao chép'})
+                }
+            });
+        })
+    }
 }
+
+const handleInitFancybox = function () {
+    if ($('.initFancybox').length) {
+        $('.initFancybox').each(function () {
+            let elm = $(this);
+            Fancybox.bind(`[data-fancybox=${elm.attr('data-fancybox')}]`, {
+                thumbs: {
+                    autoStart: true,
+                },
+            });
+        });
+    }
+}
+
+
 $(function () {
     handleApplyCollapse($('#header-navigation > ul'), true, true);
     handleCallMenu();
@@ -177,14 +192,15 @@ $(function () {
         handleApplyCollapse($('#header-navigation > ul'));
         handleCallMenu();
     });
-	handleStickHeader();
+    handleStickHeader();
 
     handleSliderHero();
 
-	if ($('[data-bs-toggle="tooltip"]').length) {
-		$('[data-bs-toggle="tooltip"]').tooltip({
-			trigger: 'hover',
-		});
-	}
-	handleCopyValue();
+    if ($('[data-bs-toggle="tooltip"]').length) {
+        $('[data-bs-toggle="tooltip"]').tooltip({
+            trigger: 'hover',
+        });
+    }
+    handleCopyValue();
+    handleInitFancybox();
 });
