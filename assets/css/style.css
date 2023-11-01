@@ -878,6 +878,63 @@
 	content: "";
 }
 
+.scammer-information {
+	display: flex;
+	flex-direction: column;
+}
+
+.scammer-information .scammer-header {
+	color: var(--primary-color);
+	background: rgba(var(--primary-rgb), 0.05);
+	border: 1px solid var(--bs-gray-200);
+	border-bottom: 0;
+	padding: 9px 18px;
+	border-radius: 10px 10px 0 0;
+	-moz-border-radius: 10px 10px 0 0;
+	-webkit-border-radius: 10px 10px 0 0;
+	display: inline-block;
+	font-size: 1.3em;
+	font-weight: 700;
+	width: max-content;
+}
+
+.scammer-information .scammer-body {
+	padding: 10px 20px;
+	border-radius: 0 10px 10px 10px;
+	border: 1px solid var(--bs-gray-200);
+}
+
+.scammer-information .information-item {
+	font-size: 1.075em;
+	color: var(--bs-black);
+	padding: 14px 0;
+}
+
+.scammer-information .information-item .information-item_title {
+	width: 250px;
+	flex-shrink: 0;
+	padding-right: 15px;
+}
+
+.scammer-information .information-item .information-item_title {
+	font-weight: 700;
+}
+
+.scammer-information .information-item .information-item_title > img {
+	width: 24px;
+	height: 24px;
+	position: relative;
+	top: -1px;
+}
+
+.scammer-information .information-item .information-item_value {
+	width: 100%;
+}
+
+.scammer-information .information-item + .information-item {
+	border-top: 1px solid var(--bs-gray-200);
+}
+
 @media screen and (min-width: 992px) and (max-width: 1400px) {
 	.header .header-main .header-navigation > ul > li > a {
 		padding-left: 10px !important;
@@ -885,7 +942,7 @@
 	}
 
 	.header .header-main .header-users .header-user_item .button-theme,
-	.header .header-main .header-users .header-user_item .user-price{
+	.header .header-main .header-users .header-user_item .user-price {
 		font-size: 1em;
 		padding: 6px 10px;
 	}
