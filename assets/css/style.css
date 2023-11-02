@@ -164,6 +164,11 @@
 	background-color: var(--secondary-color);
 }
 
+.button-theme.button-theme_large {
+	font-size: 1.225em;
+	padding: 12px 25px;
+}
+
 .slider-theme {
 	position: relative;
 }
@@ -1330,7 +1335,7 @@
 	color: var(--bs-black);
 }
 
-.seller-left .seller-body {
+.seller-information .seller-body {
 	background: #f8faff;
 	padding: 10px 15px;
 }
@@ -1402,6 +1407,172 @@
 .seller-left .seller-body .seller-box .seller-box_small ul:last-child,
 .seller-left .seller-body .seller-box .seller-box_small ol:last-child {
 	margin-bottom: 0;
+}
+
+.seller-right {
+	margin-top: 15px;
+	box-shadow: 5px 0 40px 0 rgba(67, 130.99999999999986, 235.99999999999997, 0.05);
+}
+
+.seller-right .seller-introduction {
+	background: var(--bs-white);
+	border-radius: 12px 12px 0 0;
+	padding: 15px;
+	position: relative;
+}
+
+.seller-right .seller-heading {
+	margin-bottom: 15px;
+}
+
+.seller-right .seller-heading .seller-heading_title {
+	margin-bottom: 15px;
+	font-size: 1.75em;
+	font-weight: 700;
+	color: var(--bs-black);
+}
+
+.seller-right .seller-heading .seller-heading_text {
+	font-size: 1.075em;
+	color: var(--bs-gray-800);
+}
+
+.seller-right .seller-heading .seller-heading_text p:last-child {
+	margin-bottom: 0;
+}
+
+.seller-right .review-item {
+	padding: 15px;
+	border-radius: 6px;
+	overflow: hidden;
+	background: var(--bs-white);
+	display: flex;
+	align-items: flex-start;
+	gap: 10px;
+	border: 1px solid #f3f3f3;
+}
+
+.seller-right .review-item .review-avatar {
+	width: 45px;
+	flex-shrink: 0;
+}
+
+.seller-right .review-item .review-content {
+	width: 100%
+}
+
+.seller-right .review-item .review-content .review-description {
+	font-size: 1.075em;
+}
+
+.seller-right .review-item .review-content .review-description > a {
+	font-weight: 700;
+	color: var(--bs-black);
+}
+
+.seller-right .review-item .review-content .review-date {
+	color: #9B9B9B;
+	margin-top: 2px;
+}
+
+.bank-table .table {
+	background-color: var(--bs-white);
+	--bs-table-border-color: var(--bs-gray-200);
+	--bs-table-hover-bg: var(--bs-gray-100);
+}
+
+.bank-table thead {
+	background-color: #f3f3f3;
+}
+
+.bank-table thead th {
+	color: var(--bs-gray-900);
+	padding: 12px 10px;
+	position: relative;
+	border-top-width: 1px;
+}
+
+.bank-table tbody td {
+	padding: 12px 10px;
+	color: var(--bs-gray-900);
+	-webkit-transition: var(--transition-default);
+	-o-transition: var(--transition-default);
+	transition: var(--transition-default);
+	font-size: 1.075em;
+}
+
+.bank-table .bank-label {
+	display: -webkit-inline-box;
+	display: -ms-inline-flexbox;
+	display: inline-flex;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+	padding: 4px 10px;
+	border-radius: 4px;
+	font-size: .85em;
+}
+
+.bank-table .bank-label.label-primary {
+	color: var(--bs-white);
+	background-color: var(--primary-color);
+}
+
+.bank-table .bank-label.label-success {
+	color: var(--bs-white);
+	background-color: var(--bs-success);
+}
+
+.bank-table .bank-label.label-danger {
+	color: var(--bs-white);
+	background-color: var(--bs-danger);
+}
+
+.bank-table .bank-label.label-warning {
+	color: var(--bs-black);
+	background-color: var(--bs-warning);
+	border-radius: 4px;
+}
+
+.bank-table .bank-action {
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.bank-table .bank-action .button-theme {
+	border-radius: 4px;
+	padding: 4px 12px;
+	font-size: .925em;
+	font-weight: 400;
+	height: 28px;
+}
+
+.bank-table .bank-action .link-default {
+	padding: 8px;
+	font-size: 1em;
+	border: 1px solid var(--bs-gray-200);
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+	color: var(--bs-gray-700);
+	border-radius: 6px;
+	background-color: var(--bs-white);
+}
+
+.bank-table .bank-action .link-default:hover {
+	color: var(--bs-black);
+	background-color: var(--bs-gray-100);
 }
 
 @media screen and (min-width: 992px) and (max-width: 1400px) {
