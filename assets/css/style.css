@@ -854,8 +854,11 @@
 	width: auto;
 }
 
+.footer .section-gap {
+	padding: 30px 0;
+}
+
 .footer .footer-bottom {
-	padding: 50px 0 30px;
 	border-top: 1px solid var(--bs-gray-300);
 }
 
@@ -997,14 +1000,6 @@
 	align-items: flex-start;
 }
 
-.scammer-related .scammer-related_list .scammer-related_item .scammer-avatar {
-	width: 60px;
-	flex-shrink: 0;
-	border-radius: 6px;
-	overflow: hidden;
-	transition: var(--transition-default);
-}
-
 .scammer-related .scammer-related_list .scammer-related_item .scammer-content {
 	width: 100%;
 }
@@ -1014,11 +1009,20 @@
 	color: var(--bs-black);
 	font-weight: 700;
 	margin-bottom: 4px;
+	display: flex;
 	transition: var(--transition-default);
 }
 
+.scammer-related .scammer-related_list .scammer-related_item .scammer-title .scammer-icon {
+	color: var(--primary-color);
+}
+
+.scammer-related .scammer-related_list .scammer-related_item .scammer-price {
+	margin-bottom: 4px;
+}
+
 .scammer-related .scammer-related_list .scammer-related_item .scammer-date {
-	font-size: .925em;
+	font-size: 1em;
 	color: #8c8c8c;
 }
 
@@ -1109,11 +1113,34 @@
 .comments-list .comment-item .comment-left .comment-badge {
 	width: 100%;
 	font-size: .875em;
-	background-color: #6b6b6b;
-	color: var(--bs-white);
 	border-radius: 50px;
 	padding: 4px 12px;
 	margin-bottom: 2px;
+}
+
+.comments-list .comment-item .comment-left .comment-badge.comment-badge_default {
+	background-color: #6b6b6b;
+	color: var(--bs-white);
+}
+
+.comments-list .comment-item .comment-left .comment-badge.comment-badge_danger {
+	background-color: #f3dfe2;
+	color: #842029;
+}
+
+.comments-list .comment-item .comment-left .comment-badge.comment-badge_success {
+	background-color: #d1e5db;
+	color: #0f5132;
+}
+
+.comments-list .comment-item .comment-left .comment-badge.comment-badge_warning {
+	background-color: #ffecb5;
+	color: #664d03;
+}
+
+.comments-list .comment-item .comment-left .comment-badge.comment-badge_primary {
+	background-color: #b6d4fe;
+	color: #084298;
 }
 
 .comments-list .comment-item .comment-left .comment-meta .comment-meta_item {
@@ -1149,6 +1176,47 @@
 	padding: 10px 0;
 	font-size: 1.075em;
 	color: var(--bs-black);
+}
+
+.scammer-form_inner {
+	border: 1px solid;
+	border-top-color: #dfdfdf;
+	border-bottom-color: #cbcbcb;
+	border-right-color: #d8d8d8;
+	border-left-color: #d8d8d8;
+	border-radius: 4px;
+	overflow: hidden;
+	padding: 15px;
+	background: #fafafa;
+	font-size: 1.075em;
+}
+
+.scammer-form_inner .scammer-form_item .form-check {
+	padding-left: 1.25rem;
+	margin-bottom: 0;
+	cursor: pointer;
+}
+
+.scammer-form_inner .scammer-form_item .form-check .form-check-input {
+	margin-left: -1.25rem;
+	margin-top: 0.2em;
+	cursor: pointer;
+}
+
+.scammer-form_inner .scammer-form_item .form-check .form-check-label {
+	cursor: pointer;
+}
+
+.scammer-form_inner .scammer-form_item + .scammer-form_item {
+	margin-top: 15px;
+}
+
+.scammer-form_inner .scammer-form_item .form-label {
+	font-weight: 700;
+}
+
+.scammer-form_inner .scammer-form_item .form-control {
+	padding: 10px 15px;
 }
 
 .section-pagination {
@@ -1207,6 +1275,7 @@
 
 .seller-left {
 	margin-top: 15px;
+	box-shadow: 5px 0 40px 0 rgba(67, 130.99999999999986, 235.99999999999997, 0.05);
 }
 
 .seller-left .seller-header {
@@ -1262,7 +1331,7 @@
 }
 
 .seller-left .seller-body {
-	background: rgba(var(--primary-rgb), 0.075);
+	background: #f8faff;
 	padding: 10px 15px;
 }
 
@@ -1292,6 +1361,47 @@
 	flex-shrink: 0;
 	width: 16px;
 	height: 16px;
+}
+
+.seller-left .seller-body .seller-box {
+	display: flex;
+	align-items: center;
+	gap: 4px;
+	flex-wrap: wrap;
+	margin-top: 25px;
+}
+
+.seller-left .seller-body .seller-box .seller-box_text {
+	font-size: 1.3em;
+	color: var(--bs-black);
+	font-weight: 500;
+	min-width: 90px;
+	padding-right: 15px;
+}
+
+.seller-left .seller-body .seller-box .seller-box_value {
+	font-size: 1.45em;
+	color: var(--bs-danger);
+	font-weight: 700;
+	position: relative;
+	top: -1px;
+}
+
+.seller-left .seller-body .seller-box .seller-box_small {
+	color: var(--bs-danger);
+	font-weight: 700;
+}
+
+.seller-left .seller-body .seller-box .seller-box_small p,
+.seller-left .seller-body .seller-box .seller-box_small ul,
+.seller-left .seller-body .seller-box .seller-box_small ol {
+	margin-bottom: 12px;
+}
+
+.seller-left .seller-body .seller-box .seller-box_small p:last-child,
+.seller-left .seller-body .seller-box .seller-box_small ul:last-child,
+.seller-left .seller-body .seller-box .seller-box_small ol:last-child {
+	margin-bottom: 0;
 }
 
 @media screen and (min-width: 992px) and (max-width: 1400px) {
