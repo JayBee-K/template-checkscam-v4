@@ -1477,14 +1477,14 @@
 
 .seller-left .seller-header .seller-avatar .seller-tick {
 	position: absolute;
-	bottom: -13px;
-	right: -13px;
+	bottom: -18px;
+	right: -18px;
 	-webkit-box-shadow: 0px 6px 12px -6px rgba(24, 39, 75, 0.12), 0px 8px 24px -4px rgba(24, 39, 75, 0.08);
 	box-shadow: 0px 6px 12px -6px rgba(24, 39, 75, 0.12), 0px 8px 24px -4px rgba(24, 39, 75, 0.08);
 	border: 3px solid var(--bs-white);
-	height: 26px;
-	width: 26px;
-	font-size: 0.925em;
+	height: 36px;
+	width: 36px;
+	font-size: 1.075em;
 	border-radius: 50%;
 	display: -webkit-box;
 	display: -ms-flexbox;
