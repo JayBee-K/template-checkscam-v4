@@ -290,6 +290,11 @@ input[type='number'] {
 		flex: 0 0 auto;
 		width: calc(100% / 8)
 	}
+
+	.row-cols-xl-10 > * {
+		flex: 0 0 auto;
+		width: 10%
+	}
 }
 
 .button-copy {
