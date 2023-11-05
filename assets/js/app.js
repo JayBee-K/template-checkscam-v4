@@ -185,28 +185,140 @@ const handleInitFancybox = function () {
 }
 
 const handleInitTaleArticle = function () {
-	if ($('#article-content table').length > 0) {
-		$('#article-content table').map(function () {
-			$(this).addClass('table table-bordered');
-			$(this).wrap('<div class="table-responsive"></div>');
-		})
-	}
+    if ($('#article-content table').length > 0) {
+        $('#article-content table').map(function () {
+            $(this).addClass('table table-bordered');
+            $(this).wrap('<div class="table-responsive"></div>');
+        })
+    }
 }
 
 const handleViewPass = function () {
-	$(document).on('click', '.buttonViewPassword', function () {
-		let elm = $(this),
-			elmID = elm.attr('data-id');
-		if (elm.hasClass('is-show')) {
-			elm.html('<i class="fal fa-eye">');
-			elm.removeClass('is-show');
-			$('#' + elmID).attr('type', 'password');
-		} else {
-			elm.html('<i class="fal fa-eye-slash">');
-			elm.addClass('is-show');
-			$('#' + elmID).attr('type', 'text');
-		}
-	});
+    $(document).on('click', '.buttonViewPassword', function () {
+        let elm = $(this),
+            elmID = elm.attr('data-id');
+        if (elm.hasClass('is-show')) {
+            elm.html('<i class="fal fa-eye">');
+            elm.removeClass('is-show');
+            $('#' + elmID).attr('type', 'password');
+        } else {
+            elm.html('<i class="fal fa-eye-slash">');
+            elm.addClass('is-show');
+            $('#' + elmID).attr('type', 'text');
+        }
+    });
+}
+
+const handleInitPopoverContent = function () {
+    if ($('.initPopoverContent').length) {
+        $('.initPopoverContent').each(function () {
+            const htmlContent = `<span style="font-size: 22px"><b><span style="color: rgb(97, 189, 109)">Chia sẻ cho ae tool download toàn bộ kênh tiktok, douyin, youtube</span></b></span><br>
+                                <br>
+                                Có thể download reel nhưng chỉ download từng link, ko down từ link kênh được<br>
+                                Còn lại các nền tảng khác vẫn down được toàn bộ kênh<br>
+                                <br>
+                                Tool miễn phí nhiều chức năng, ae đăng nhập mới có thể sử dụng nhé<br>
+                                Tool miễn phí nên mình chỉ hỗ trợ khi rảnh, lưu ý cần đăng nhập mới có thể sử dụng nhé`;
+            $(this).popover({
+                placement: 'top',
+                fallbackPlacements: ['top', 'bottom'],
+                html: true,
+                trigger: 'manual',
+                delay: {"show": 500, "hide": 100},
+                template: `<div class="theme-popover theme-popover_default popover"><div class="popover-arrow"></div><div class="popover-body"></div></div>`,
+                content: htmlContent
+            }).on("mouseenter", function() {
+                var _this = this;
+                $(this).popover("show");
+                $(".theme-popover_default.show").on("mouseleave", function() {
+                    $(_this).popover('hide');
+                });
+            }).on("mouseleave", function() {
+                var _this = this;
+                setTimeout(function() {
+                    if (!$(".theme-popover_default.show:hover").length) {
+                        $(_this).popover("hide");
+                    }
+                }, 300);
+            });
+        })
+    }
+}
+const handleInitPopoverUser = function () {
+    if ($('.initPopoverUser').length) {
+        $('.initPopoverUser').each(function () {
+
+            const htmlContent = `<div class="user-popover">
+                                    <div class="user-header hstack gap-10px">
+                                        <div class="user-avatar flex-shrink-0">
+                                            <a href="" class="d-block ratio ratio-1x1">
+                                                <img src="./assets/images/user.jpg" class="img-fluid" alt="">
+                                            </a>
+                                        </div>
+                                        <div class="user-content">
+                                            <a href="" class="user-name limit">
+                                                hophudat
+                                            </a>
+                                            <div class="user-sub">
+                                                Senior · 38
+                                            </div>
+                                            <div class="user-meta">
+                                                <div class="user-meta_item">
+                                                    <span>Joined:</span> May 18, 2012
+                                                </div>
+                                                <div class="user-meta_item">
+                                                    <span>Last seen:</span> Today at 10.30 AM · Viewing thread <a href="">Shiba Ini: 1,4 tỷ SHIB bị đốt
+                                                    trong tháng 10</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="user-body hstack gap-5px justify-content-between">
+                                        <div class="user-item">
+                                            Message
+                                            <a class="user-item_color" href="">
+                                                509
+                                            </a>
+                                        </div>
+                                        <div class="user-item">
+                                            Reactions
+                                            <span class="user-item_color">
+                                                1.754
+                                            </span>
+                                        </div>
+                                        <div class="user-item">
+                                            MR
+                                            <a class="user-item_color" href="">
+                                                43.288
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>`;
+
+            $(this).popover({
+                placement: 'top',
+                fallbackPlacements: ['top', 'bottom'],
+                html: true,
+                trigger: 'manual',
+                delay: {"show": 500, "hide": 100},
+                template: `<div class="theme-popover theme-popover_user popover"><div class="popover-arrow"></div><div class="popover-body p-0"></div></div>`,
+                content: htmlContent
+            }).on("mouseenter", function() {
+                var _this = this;
+                $(this).popover("show");
+                $(".theme-popover_user.show").on("mouseleave", function() {
+                    $(_this).popover('hide');
+                });
+            }).on("mouseleave", function() {
+                var _this = this;
+                setTimeout(function() {
+                    if (!$(".theme-popover_user.show:hover").length) {
+                        $(_this).popover("hide");
+                    }
+                }, 300);
+            });
+        })
+    }
 }
 
 $(function () {
@@ -227,6 +339,8 @@ $(function () {
     }
     handleCopyValue();
     handleInitFancybox();
-	handleInitTaleArticle();
-	handleViewPass();
+    handleInitTaleArticle();
+    handleViewPass();
+    handleInitPopoverContent();
+    handleInitPopoverUser();
 });
