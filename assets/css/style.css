@@ -176,6 +176,17 @@
     background-color: var(--secondary-color);
 }
 
+.button-theme.button-theme_default {
+	border-color: var(--bs-secondary);
+	background-color: var(--bs-secondary);
+}
+
+.button-theme.button-theme_circle {
+	border-radius: 50%;
+	width: 40.5px;
+	height: 40.5px
+}
+
 .button-theme.button-theme_large {
     font-size: 1.225em;
     padding: 12px 25px;
