@@ -356,6 +356,7 @@ $(function () {
 			trigger: 'hover',
 		});
 	}
+
 	handleCopyValue();
 	handleInitFancybox();
 	handleInitTaleArticle();
