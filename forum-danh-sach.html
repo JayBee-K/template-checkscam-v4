@@ -368,52 +368,148 @@
 							</div>
 						</div>
 						<div class="forum-card card rounded-0">
-							<div class="card-header vstack rounded-0">
-								<div class="card-tags">
-									<button type="button" class="tag-item" data-bs-toggle="tooltip" title="Remove this filter">
-										Prefix: <span>Verified by QTV</span>
-									</button>
+							<div class="card-header py-0 vstack rounded-0">
+								<div class="hstack justify-content-between gap-10px">
+									<div class="card-tags py-2">
+										<button type="button" class="tag-item" data-bs-toggle="tooltip"
+										        title="Remove this filter">
+											Prefix: <span>Verified by QTV</span>
+										</button>
+										<button type="button" class="tag-item" data-bs-toggle="tooltip"
+										        title="Remove this filter">
+											Last Update: <span>7 Days</span>
+										</button>
+										<button type="button" class="tag-item" data-bs-toggle="tooltip"
+										        title="Remove this filter">
+											Sort by: <span>Replies</span>
+										</button>
+										<button type="button" class="tag-item" data-bs-toggle="tooltip"
+										        title="Remove this filter">
+											Progress: <span>Complete</span>
+										</button>
+									</div>
+									<div class="card-filter">
+										<button type="button" class="filter-button" data-bs-toggle="dropdown"
+										        data-bs-auto-close="outside">
+											Filter <i class="fas fa-caret-down"></i>
+										</button>
+										<ul class="dropdown-menu dropdown-menu-end">
+											<li>
+												<div class="dropdown-header">Show only:</div>
+											</li>
+											<li>
+												<div class="dropdown-body">
+													<div class="dropdown-form_item">
+														<div class="dropdown-form_label">
+															Prefix:
+														</div>
+														<div class="dropdown-form_input">
+															<select name="" class="form-control" id="">
+																<option value="">(Any)</option>
+																<optgroup label="All">
+																	<option value="">Rules</option>
+																	<option value="">Announcement</option>
+																	<option value="">Verified by QTV</option>
+																</optgroup>
+																<optgroup label="All">
+																	<option value="">Rules</option>
+																	<option value="">Announcement</option>
+																	<option value="">Verified by QTV</option>
+																</optgroup>
+																<optgroup label="All">
+																	<option value="">Rules</option>
+																	<option value="">Announcement</option>
+																	<option value="">Verified by QTV</option>
+																</optgroup>
+																<optgroup label="All">
+																	<option value="">Rules</option>
+																	<option value="">Announcement</option>
+																	<option value="">Verified by QTV</option>
+																</optgroup>
+															</select>
+														</div>
+													</div>
+													<div class="dropdown-form_item">
+														<div class="dropdown-form_label">
+															Started by:
+														</div>
+														<div class="dropdown-form_input">
+															<input type="text" class="form-control">
+														</div>
+													</div>
+													<div class="dropdown-form_item">
+														<div class="dropdown-form_label">
+															Last updated:
+														</div>
+														<div class="dropdown-form_input">
+															<select name="" class="form-control" id="">
+																<option value="">Any time</option>
+																<option value="">7 days</option>
+																<option value="">14 days</option>
+																<option value="">30 days</option>
+																<option value="">2 months</option>
+																<option value="">3 months</option>
+																<option value="">6 months</option>
+																<option value="">1 year</option>
+															</select>
+														</div>
+													</div>
+													<div class="dropdown-form_item">
+														<div class="dropdown-form_label">
+															Threadmark index status:
+														</div>
+														<div class="dropdown-form_input">
+															<select name="" class="form-control" id="">
+																<option value="">Any</option>
+																<option value="">Incomplete</option>
+																<option value="">Complete</option>
+																<option value="">Hiatus</option>
+																<option value="">Dropped</option>
+															</select>
+														</div>
+													</div>
+													<div class="dropdown-form_item">
+														<div class="dropdown-form_label">
+															Sort by:
+														</div>
+														<div class="dropdown-form_input">
+															<div class="row g-2 row-cols-sm-2">
+																<div class="col">
+																	<select name="" class="form-control" id="">
+																		<option value="">Last Message</option>
+																		<option value="">First Message</option>
+																		<option value="">Title</option>
+																		<option value="">Replies</option>
+																	</select>
+																</div>
+																<div class="col">
+																	<select name="" class="form-control" id="">
+																		<option value="">Descending</option>
+																		<option value="">Ascending</option>
+																	</select>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</li>
+											<li>
+												<div class="dropdown-footer">
+													<button class="button-theme button-theme_primary button-theme_extrasmall">
+														Filter
+													</button>
+												</div>
+											</li>
+										</ul>
+									</div>
 								</div>
-								<div class="card-filter"></div>
 							</div>
 							<div class="card-highlight">
 								STICKY THREADS
 							</div>
 							<div class="card-body p-0">
 								<div class="forum-box forum-box_active hstack gap-10px w-100">
-									<div class="box-icon flex-shrink-0">
-										<i class="far fa-comments"></i>
-									</div>
-									<div class="box-content">
-										<a href="" class="box-title limit">
-											Announcements
-										</a>
-										<div class="box-text limit">
-											Thông báo mới nhất của MMO4ME được cập nhật thường xuyên ở đây.
-										</div>
-										<div class="box-list hstack flex-wrap">
-											<a href="" class="box-list_item">
-												<i class="far fa-comments"></i>Global Rules
-											</a>
-											<a href="" class="box-list_item">
-												<i class="far fa-comments"></i>Tutorial
-											</a>
-											<a href="" class="box-list_item">
-												<i class="far fa-comments"></i>Global Rules
-											</a>
-										</div>
-									</div>
-									<div class="box-statistics align-self-center hstack flex-shrink-0 gap-20px">
-										<div class="box-statistics_item vstack text-center">
-											<span>Threads</span>
-											12.4K
-										</div>
-										<div class="box-statistics_item vstack text-center">
-											<span>Messages</span>
-											147.8K
-										</div>
-									</div>
-									<div class="box-latest align-self-center hstack flex-shrink-0 gap-10px">
+									<div class="box-latest box-latest_large align-self-center hstack flex-shrink-0 gap-10px">
 										<div class="latest-avatar rounded-circle overflow-hidden flex-shrink-0">
 											<a href="" class="d-block ratio-1x1 ratio initPopoverUser"
 											   data-bs-toggle="popover">
@@ -427,23 +523,52 @@
 													[VPS]
 												</span>
 												<span class="limit">
-													PM 23.5, USDT 24.4, WMZ 20.2 [SELL] PM 24.0, USDT 24.8, WMZ 20.7
-													-
-													All
-													bank
+													VPS [TRUMVPS.VN] GIÁ TỪ 50K/THÁNG - VPS VIỆT NAM , USA , CANADA ,
+													ĐỨC ,UK , INDONESIA , MALAYSIA , HK , JP , ÚC, [TRUMVPS.VN] GIÁ TỪ
+													50K/THÁNG - VPS VIỆT NAM , USA , CANADA , ĐỨC ,UK , INDONESIA ,
+													MALAYSIA , HK , JP , ÚC ...
 												</span>
 											</a>
 											<div class="latest-meta hstack">
-												<div class="latest-meta_time">
-													Today at 8:11 AM
-												</div>
 												<div class="latest-meta_user">
 													<a href="" class="limit initPopoverUser"
 													   data-bs-toggle="popover">
 														kotexsitin
 													</a>
 												</div>
+												<div class="latest-meta_time">
+													Today at 8:11 AM
+												</div>
+												<div class="latest-meta_pagination">
+													<ul class="pagination mb-0">
+														<li class="page-item">
+															<a class="page-link" href="#">
+																1
+															</a>
+														</li>
+														<li class="page-item active">
+															<a class="page-link" href="#">
+																2
+															</a>
+														</li>
+														<li class="page-item">
+															<a class="page-link" href="#">
+																3
+															</a>
+														</li>
+													</ul>
+												</div>
 											</div>
+										</div>
+									</div>
+									<div class="box-statistics align-self-center hstack flex-shrink-0 gap-20px">
+										<div class="box-statistics_item vstack text-center">
+											<span>Threads</span>
+											12.4K
+										</div>
+										<div class="box-statistics_item vstack text-center">
+											<span>Messages</span>
+											147.8K
 										</div>
 									</div>
 								</div>
