@@ -320,3 +320,20 @@ input[type='number'] {
 .button-copy:hover svg {
 	fill: var(--bs-gray-900);
 }
+
+.modal-dialog-scrollable .modal-body::-webkit-scrollbar {
+	width: 6px;
+}
+
+.modal-dialog-scrollable .modal-body::-webkit-scrollbar-track {
+	background: #cecece;
+}
+
+.modal-dialog-scrollable .modal-body::-webkit-scrollbar-thumb {
+	background: #a6a6a6;
+	border-radius: 5px;
+}
+
+.modal-dialog-scrollable .modal-body::-webkit-scrollbar-thumb:hover {
+	background: #949494;
+}
