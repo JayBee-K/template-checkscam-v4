@@ -2577,15 +2577,15 @@
 }
 
 .article-detail .article-content h2 {
-	font-size: 1.6em;
-}
-
-.article-detail .article-content h3 {
 	font-size: 1.45em;
 }
 
+.article-detail .article-content h3 {
+	font-size: 1.35em;
+}
+
 .article-detail .article-content h4 {
-	font-size: 1.3em;
+	font-size: 1.25em;
 }
 
 .article-detail .article-content h5 {
@@ -2593,7 +2593,7 @@
 }
 
 .article-detail .article-content h6 {
-	font-size: 1em;
+	font-size: 1.05em;
 }
 
 .article-detail .article-content p:last-child,
