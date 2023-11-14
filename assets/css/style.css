@@ -177,8 +177,8 @@
 }
 
 .button-theme.button-theme_secondary {
-	border-color: var(--secondary-color);
-	background-color: var(--secondary-color);
+	border-color: #ec971f;
+	background-color: #ec971f;
 }
 
 .button-theme.button-theme_default {
