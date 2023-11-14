@@ -1894,6 +1894,26 @@
 	font-size: 0.925em;
 }
 
+.seller-left .seller-header .seller-sub.seller-sub_danger {
+	background-color: #842029;
+	color: var(--bs-white);
+}
+
+.seller-left .seller-header .seller-sub.seller-sub_success {
+	background-color: #0f5132;
+	color: var(--bs-white);
+}
+
+.seller-left .seller-header .seller-sub.seller-sub_warning {
+	background-color: #664d03;
+	color: var(--bs-white);
+}
+
+.seller-left .seller-header .seller-sub.seller-sub_primary {
+	background-color: #084298;
+	color: var(--bs-white);
+}
+
 .seller-left .seller-header .seller-social {
 	display: -webkit-box;
 	display: -ms-flexbox;
