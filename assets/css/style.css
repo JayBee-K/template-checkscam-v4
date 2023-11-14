@@ -1895,22 +1895,22 @@
 }
 
 .seller-left .seller-header .seller-sub.seller-sub_danger {
-	background-color: #842029;
+	background-color: var(--bs-danger);
 	color: var(--bs-white);
 }
 
 .seller-left .seller-header .seller-sub.seller-sub_success {
-	background-color: #0f5132;
+	background-color: var(--bs-success);
 	color: var(--bs-white);
 }
 
 .seller-left .seller-header .seller-sub.seller-sub_warning {
-	background-color: #664d03;
-	color: var(--bs-white);
+	background-color: var(--bs-warning);
+	color: var(--bs-black);
 }
 
 .seller-left .seller-header .seller-sub.seller-sub_primary {
-	background-color: #084298;
+	background-color: var(--bs-primary);
 	color: var(--bs-white);
 }
 
@@ -4541,6 +4541,7 @@ a.forum-badge_error:hover, a:hover .forum-badge_error {
 	.header .header-main .header-logo img {
 		height: 45px;
 		max-width: 100%;
+		object-fit: contain;
 	}
 
 	.header .header-main .header-users .header-user_item .button-theme {
