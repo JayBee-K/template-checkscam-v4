@@ -107,6 +107,11 @@
 	margin-left: 6px;
 }
 
+.section-heading .heading-select .form-select {
+	font-size: 1.075em;
+	min-width: 200px;
+}
+
 .button-theme {
 	display: -webkit-inline-box;
 	display: -ms-inline-flexbox;
@@ -4484,22 +4489,21 @@ a.forum-badge_error:hover, a:hover .forum-badge_error {
 		font-size: .85em;
 	}
 
-	.modal-reaction .modal-body .modal-user_list .modal-user_item .user-extra{
+	.modal-reaction .modal-body .modal-user_list .modal-user_item .user-extra {
 		width: 30%;
 	}
 
-	.modal-reaction .modal-body .modal-user_list .modal-user_item .user-extra .user-reaction{
+	.modal-reaction .modal-body .modal-user_list .modal-user_item .user-extra .user-reaction {
 		width: 28px;
 		height: 28px;
 	}
 
 
-
-	.modal-reaction .modal-body .modal-user_list .modal-user_item .user-extra{
+	.modal-reaction .modal-body .modal-user_list .modal-user_item .user-extra {
 		width: 30%;
 	}
 
-	.modal-reaction .modal-body .modal-user_list .modal-user_item .user-extra .user-reaction{
+	.modal-reaction .modal-body .modal-user_list .modal-user_item .user-extra .user-reaction {
 		width: 28px;
 		height: 28px;
 	}
@@ -5253,6 +5257,11 @@ a.forum-badge_error:hover, a:hover .forum-badge_error {
 @media screen and (max-width: 575px) {
 	.theme-popover {
 		--bs-popover-max-width: 320px;
+	}
+
+	.section-heading .heading-select .form-select {
+		font-size: 1em;
+		min-width: 120px;
 	}
 }
 
