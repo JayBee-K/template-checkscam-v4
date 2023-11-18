@@ -861,7 +861,7 @@
 
 .service-card .card-icon {
     margin-bottom: 20px;
-    width: 65px;
+    width: 100%;
 }
 
 .service-card .card-title {
@@ -2659,7 +2659,7 @@
 
 .article-detail .article-content h4,
 .article-detail .article-content h5,
-.article-detail .article-content h6{
+.article-detail .article-content h6 {
     font-size: 1em;
 }
 
@@ -4304,7 +4304,6 @@ a.forum-badge_error:hover, a:hover .forum-badge_error {
     }
 
     .service-card .card-icon {
-        width: 50px;
         margin-bottom: 15px;
     }
 
