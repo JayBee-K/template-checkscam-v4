@@ -2631,7 +2631,7 @@
 .article-detail .article-content h5,
 .article-detail .article-content h6 {
     margin-bottom: 10px;
-    font-weight: 700;
+    font-weight: 600;
 }
 
 .article-detail .article-content h1 b,
@@ -2646,7 +2646,7 @@
 .article-detail .article-content h5 strong,
 .article-detail .article-content h6 b,
 .article-detail .article-content h6 strong {
-    font-weight: 700;
+    font-weight: 600;
 }
 
 .article-detail .article-content h2 {
@@ -2654,18 +2654,12 @@
 }
 
 .article-detail .article-content h3 {
-    font-size: 1.225em;
-}
-
-.article-detail .article-content h4 {
     font-size: 1.15em;
 }
 
-.article-detail .article-content h5 {
-    font-size: 1.075em;
-}
-
-.article-detail .article-content h6 {
+.article-detail .article-content h4,
+.article-detail .article-content h5,
+.article-detail .article-content h6{
     font-size: 1em;
 }
 
