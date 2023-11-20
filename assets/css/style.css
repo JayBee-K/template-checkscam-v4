@@ -197,6 +197,11 @@
     padding: 12px 25px;
 }
 
+.button-theme.button-theme_medium {
+    font-size: 1.155em;
+    padding: 10px 25px;
+}
+
 .button-theme.button-theme_small {
     font-size: 0.925em;
     padding: 4.5px 18px;
@@ -2154,6 +2159,12 @@
 .bank-table .bank-label.label-warning {
     color: var(--bs-black);
     background-color: var(--bs-warning);
+    border-radius: 4px;
+}
+
+.bank-table .bank-label.label-secondary {
+    color: var(--bs-white);
+    background-color: var(--bs-secondary);
     border-radius: 4px;
 }
 
@@ -4264,6 +4275,77 @@ a.forum-badge_error:hover, a:hover .forum-badge_error {
     color: var(--primary-color);
 }
 
+.intermediary-form {
+    border-radius: 12px;
+    padding: 30px;
+    border: 1px solid var(--bs-gray-200);
+    -webkit-box-shadow: 0px 6px 14px -6px rgba(24, 39, 75, 0.07), 0px 10px 32px -4px rgba(24, 39, 75, 0.05);
+    box-shadow: 0px 6px 14px -6px rgba(24, 39, 75, 0.07), 0px 10px 32px -4px rgba(24, 39, 75, 0.05);
+}
+
+.intermediary-form .form-label {
+    margin-bottom: 0;
+    font-size: 1.075em;
+    font-weight: 700;
+}
+
+.intermediary-form .form-control,
+.intermediary-form .form-select {
+    height: 42px;
+    border-radius: 6px;
+    border: 1px solid #ced4da;
+    width: 100%;
+    padding: 8px 12px;
+    font-size: 1.075em;
+    color: var(--bs-black);
+}
+
+.intermediary-form .form-control::placeholder {
+    opacity: .7;
+}
+
+.intermediary-form .form-icon {
+    position: relative;
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+.intermediary-form .form-icon .form-control {
+    padding-right: 65px;
+}
+
+.intermediary-form .form-icon .form-icon_text {
+    position: absolute;
+    top: 50%;
+    right: 1px;
+    border-left: 1px solid #ced4da;
+    transform: translateY(-50%);
+    pointer-events: none;
+    z-index: 2;
+    height: calc(100% - 2px);
+    padding-left: 12px;
+    padding-right: 12px;
+    background: #f4f4f4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0 6px 6px 0;
+    color: var(--bs-gray-600);
+}
+
+.intermediary-table.bank-table tbody td {
+    font-size: 1em;
+    padding: 11px 10px;
+}
+
+.intermediary-alert.alert {
+    font-weight: 600;
+    padding: 3px 12px;
+    display: inline-block;
+    margin-bottom: 0;
+    font-size: .925em;
+}
+
 @media screen and (min-width: 992px) and (max-width: 1400px) {
     .header .header-main .header-navigation > ul > li > a {
         padding-left: 10px !important;
@@ -4412,7 +4494,6 @@ a.forum-badge_error:hover, a:hover .forum-badge_error {
         white-space: nowrap;
     }
 
-
     .forum-card .forum-box.forum-box_post {
         gap: 5px;
     }
@@ -4527,7 +4608,6 @@ a.forum-badge_error:hover, a:hover .forum-badge_error {
         height: 28px;
     }
 
-
     .modal-reaction .modal-body .modal-user_list .modal-user_item .user-extra {
         width: 30%;
     }
@@ -4539,6 +4619,10 @@ a.forum-badge_error:hover, a:hover .forum-badge_error {
 
     .modal-reaction .modal-body .modal-user_list .modal-user_item .user-extra .user-time {
         font-size: .725em;
+    }
+
+    .intermediary-form {
+        padding: 16px;
     }
 }
 
