@@ -1768,7 +1768,8 @@
     font-weight: 700;
 }
 
-.section-form_inner .section-form_item .form-control {
+.section-form_inner .section-form_item .form-control,
+.section-form_inner .section-form_item .form-select{
     padding: 10px 15px;
 }
 
