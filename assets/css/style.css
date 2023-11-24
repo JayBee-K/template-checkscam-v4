@@ -768,9 +768,13 @@
 }
 
 .scam-card .scam-title {
-	width: 40%;
+	width: 28% !important;
 	-ms-flex-negative: 0;
 	flex-shrink: 0;
+}
+
+.section-scam .scam-card .scam-title {
+	width: 28% !important;
 }
 
 .scam-card .scam-title {
@@ -4386,8 +4390,8 @@ a.forum-badge_error:hover, a:hover .forum-badge_error {
 		display: none;
 	}
 
-	.scam-card .scam-title {
-		width: 30%;
+	.section-scam .scam-card .scam-title {
+		width: 28% !important;
 	}
 
 	.scam-card .scam-title .scam-icon {
@@ -5027,7 +5031,10 @@ a.forum-badge_error:hover, a:hover .forum-badge_error {
 		height: auto;
 	}
 
-	.scam-card .scam-title,
+	.section-scam .scam-card .scam-title {
+		width: 100% !important;
+	}
+
 	.scam-card .scam-status {
 		width: 100%;
 	}
