@@ -916,21 +916,13 @@
 	overflow: hidden;
 }
 
-.topup-card .card-image:before {
-	display: block;
-	content: "";
-	padding-top: 100%;
-}
 
 .topup-card .card-image > img {
 	-webkit-transition: var(--transition-default);
 	-o-transition: var(--transition-default);
 	transition: var(--transition-default);
-	position: absolute;
-	content: "";
 	height: 100%;
 	width: 100%;
-	inset: 0;
 	object-fit: cover;
 }
 
